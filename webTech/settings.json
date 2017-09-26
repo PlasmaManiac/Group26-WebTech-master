@@ -1,0 +1,9 @@
+
+{
+  "galaxy.meteor.com": {
+     "env": {
+       "ROOT_URL": "http://productivty.meteorapp.com",
+       "MONGO_URL": "mongodb://productivity_admin:productivity1337@ds111469.mlab.com:11469/productivity_mongodb"
+     }
+   }
+}

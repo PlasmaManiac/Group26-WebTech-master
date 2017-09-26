@@ -1,0 +1,117 @@
+<template name = "publicBoard">
+{{> header}}
+
+<div class="row blue-grey darken-2 card-holder" style="margin-top:50px;">
+
+<div class="col s11 offset-2">
+   <div class="row">
+       <div class="col s3">
+         <ul class="collection with-header  grey lighten-4">
+
+          <li class="collection-header grey lighten-4"><h4>
+
+            {{#each column1}}
+               {{> column}}
+             {{/each}}
+
+            <div class = "one">
+             <button type="Button" class= "  btn-flat blue-grey edit-title">  <i class="tiny material-icons">mode_edit</i> </button>
+            </div>
+          </h4></li>
+          {{#each cards1}}
+             {{> card}}
+           {{/each}}
+
+         <li class=" center-align" >
+          <div class = "one">
+            {{#if currentUser}}
+            <a class="btn-floating btn-large   red new-card" id = "bottom-button"><i class="material-icons">add</i></a>
+            {{/if}}
+          </div>
+         </li>
+       </ul>
+       </div>
+
+       <div class="col s3">
+         <ul class="collection with-header grey lighten-4">
+          <li class="collection-header grey lighten-4"><h4>
+            {{#each column2}}
+               {{> column}}
+             {{/each}}
+
+          <div class = "two">
+           <button type="Button" class= "  btn-flat blue-grey edit-title">  <i class="tiny material-icons">mode_edit</i> </button>
+          </div>
+          </h4></li>
+          {{#each cards2}}
+             {{> card}}
+           {{/each}}
+         <li class=" center-align" >
+          <div class = "two">
+            {{#if currentUser}}
+          <a class="btn-floating btn-large   red new-card" id = "bottom-button"><i class="material-icons">add</i></a>
+            {{/if}}
+        </div>
+         </li>
+
+       </ul>
+      </div>
+
+       <div class="col s3">
+         <ul class="collection with-header grey lighten-4">
+           <li class="collection-header grey lighten-4"><h4>
+             {{#each column3}}
+                {{> column}}
+              {{/each}}
+
+           <div class = "three">
+            <button type="Button" class= "  btn-flat blue-grey edit-title">  <i class="tiny material-icons">mode_edit</i> </button>
+           </div>
+
+           </h4></li>
+          {{#each cards3}}
+               {{> card}}
+           {{/each}}
+         <li class=" center-align" >
+          <div class = "three">
+            {{#if currentUser}}
+            <a class="btn-floating btn-large   red new-card" id = "bottom-button"><i class="material-icons">add</i></a>
+            {{/if}}
+          </div>
+         </li>
+       </ul>
+       </div>
+
+       <div class="col s3">
+         <ul class="collection with-header grey lighten-4">
+           <li class="collection-header grey lighten-4"><h4>
+             {{#each column4}}
+                {{> column}}
+              {{/each}}
+
+           <div class = "four">
+            <button type="Button" class= "  btn-flat blue-grey edit-title">  <i class="tiny material-icons">mode_edit</i> </button>
+           </div>
+           </h4></li>
+           {{#each cards4}}
+                {{> card}}
+            {{/each}}
+
+           <div class = "new-card-slot-four">
+           </div>
+             <li class=" center-align" >
+              <div class = "four">
+                {{#if currentUser}}
+                <a class="btn-floating btn-large red new-card" id = "bottom-button"><i class="material-icons">add</i></a>
+                {{/if}}
+              </div>
+             </li>
+           </ul>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</template>

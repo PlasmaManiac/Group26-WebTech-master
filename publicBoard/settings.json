@@ -1,0 +1,8 @@
+{
+  "galaxy.meteor.com": {
+     "env": {
+       "ROOT_URL": "http://lukemapp.meteorapp.com",
+       "MONGO_URL": "mongodb://myAppAdmin:plasma1@ds159328.mlab.com:59328/myapp_mongodb"
+     }
+   }
+}

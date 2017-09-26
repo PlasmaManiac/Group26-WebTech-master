@@ -1,0 +1,15 @@
+
+<template name="app">
+<body class="app-body">
+	{{> header}}
+	<div class="main">
+		{{> listings}}
+
+		{{> Template.dynamic template=message_history}}
+
+	</div>
+	{{#if currentUser}}
+		{{> footer}}
+	{{/if}}
+</body>
+</template>

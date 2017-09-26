@@ -1,0 +1,19 @@
+<template name="post">
+  <li class="collection-item">
+    <span class="title"><div class="chip">
+      {{username}}
+  </div>
+</span>
+     <p>{{text}}<br>
+      <span class="badge"><h5>{{vote}}</h5></span>
+     </p>
+
+     <a class="btn-floating btn waves-effect waves-light red vote-down">
+       <i class="material-icons left">thumb_down</i>
+     </a>
+     <a class="btn-floating btn waves-effect waves-light green vote-up">
+        <i class="material-icons right">thumb_up</i>
+      </a>
+     </li>
+
+</template>

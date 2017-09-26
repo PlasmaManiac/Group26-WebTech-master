@@ -1,0 +1,21 @@
+<template name="listings">
+	<div class="listings">
+		<div class="listings_channels">
+			<h2 class="listings_header">Channels</h2>
+			<ul class="channel_list">
+				{{#each channels}}
+					{{> channel name=name}}
+				{{/each}}
+
+			</ul>
+			{{#if currentUser}}
+			<ul>
+				<li class="center-align new-channel-btn">
+					<a class="btn-floating btn-large waves-effect waves-light red new-channel"><i class="material-icons">add</i></a>
+				</li>
+			</ul>
+			{{/if}}
+		</div>
+		<div class="listings_direct-messages"></div>
+	</div>
+</template>

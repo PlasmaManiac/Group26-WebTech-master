@@ -1,0 +1,21 @@
+<template name="messages">
+
+			<div class="message-history">
+					<ul class="collection collection-ul">
+						<div class="row message_div">
+							<div class="col s6 message_temp">
+						{{#if Template.subscriptionsReady}}
+							{{#each messages}}
+								{{> message text=text timestamp=timestamp user=user }}
+							{{/each}}
+						{{else}}
+							Loading…
+						{{/if}}
+					</div>
+				</div>
+					</ul>
+
+
+	</div>
+
+</template>
